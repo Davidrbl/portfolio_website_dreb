@@ -1,5 +1,3 @@
-
-
 function setup_projects()
 {
     let projects_container = document.getElementById("flex-container");

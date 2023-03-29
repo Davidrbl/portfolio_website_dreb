@@ -5,7 +5,6 @@
     --col_four:     #333333;
     --col_five:     #111111;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -21,30 +20,25 @@ body {
     background-color: var(--col_one);
     color: var(--col_four);
 }
-
-h1, h2, h3, article {
+h1, h2, h3 {
     line-height: 1.2;
     
     /* this means that when clicking a link to the anchor, it will go to x ammount of pixels above it */
     scroll-margin-top: 100px;
 }
-
 h1 {
     text-align: center;
 }
-
 #flex-container {
     display: flex;
     background-color: var(--col_two);
     flex-wrap: wrap;
     justify-content: center;
 }
-
 #flex-container > a {
     text-decoration: none;
     color: var(--col_five);
 }
-
 #flex-container > a > div {
     background-color: var(--col_three);
     width: 300px;
@@ -52,12 +46,12 @@ h1 {
     padding: 10px;
     text-align: center;
 }
-
 img {
+    display: block;
+    margin: 0 auto;
     width: 250px;
     height: 250px;
 }
-
 nav {
     background-color: var(--col_four);
     top: 0;
@@ -65,7 +59,6 @@ nav {
     left: 0;
     align-items: center;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -77,11 +70,9 @@ ul {
     width: 100%;
     text-align: center;
 }
-
 li {
     display: inline-block;
 }
-
 li a {
     display: block;
     color: var(--col_one);
@@ -89,29 +80,14 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover {
     background-color: var(--col_five); 
 }
-
 .social_icon img {
     width: 50px;
     height: 50px;
 }
-
-/* 
-<style>
-body {
-    margin:40px auto;
-    max-width:650px;
-    line-height:1.6;
-    font-size:18px;
-    color:#444;
-    padding:0 10px
+article {
+    margin-top: 100px;
+    scroll-margin-top: 100px;
 }
-
-h1,h2,h3{
-    line-height:1.2
-}
-
-</style>  */
