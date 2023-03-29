@@ -1,11 +1,93 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>David Rebel</title>
     </head>
     <body>
-        <h1>David Rebel</h1>
-        <h2>hoi hoi</h2>
-        <p>brrr brrrr test test</p>
+        <h1>
+            David Rebel
+        </h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#Welcome">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h2 id="Welcome">
+            Welcome
+        </h2>
+        <p>
+            Hello, my name is David Rebel. I  am studying physics, but I also have an interest in computer science.
+            This website shows some of my computer science projects, mostly in the computer graphics department.
+        </p>
+        <h2 id="Projects">Projects</h2>
+        <div id="flex-container">
+            <!-- here, my script will fill the container with the projects below -->
+        </div>
+        <h2 id="Contact">
+            Contact
+        </h2>
+        <p>
+            Click on the icon below to go to my LinkedIn page. If you want to contact me, send me a message on there.
+        </p>
+        <a href="https://www.linkedin.com/in/david-rebel-650a80266/" class="social_icon"><img  src="images/linkedin_icon.png" alt="Linkedin icon"></a>
+
+        <article class="Project">
+            <h2>2D physics engine</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                First non-conputer graphics project in a while.
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Volumetric raytracer</h2>
+            <img src="images/test_1_img.png" alt="Skull image">
+            <p>
+                Dit was een erg cool project, ik heb er veel van geleerd.
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Texture slicing</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                alternative way of volumetrics.
+                not entirely realistic, but believable.
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Marching cubes</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat dolores deserunt magnam unde saepe totam, dolor cum cupiditate ipsa quo excepturi autem nisi hic architecto aperiam temporibus fugiat quis.
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Terrain rendering</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                Tesselation and bloom
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Asset importing</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                As a part of my OpenGL learning adventure, I was getting tired of so many manually created 3D models.
+                I wanted some more complex, interesting models to render to test my renderer.
+                So I spent some time writing a .obj file importer. I chose the .obj file format because it was simple and widely used.
+                There are definitely flaws (or things that I do not like) with the format, such as the data being stored in a human-readable format, and not binary.
+                The importer does not export indices, only vertices. I chose this to make the importer faster, because I could not figure out a clever way to eliminate duplicate vertices
+            </p>
+        </article>
+        <article class="Project">
+            <h2>Raymarcher</h2>
+            <img src="images/linkedin_icon.png" alt="Test image">
+            <p>
+                This raymarcher is very primitive, and it only has very basic features. It can render an infinite grid of objects.
+            </p>
+        </article>
     </body>
+    <script src="script.js"></script>
 </html>
